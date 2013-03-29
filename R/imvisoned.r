@@ -2,5 +2,5 @@
 #'
 #' @name imvisoned
 #' @docType package
-#' @useDynLib(imvisoned)
+#' @useDynLib imvisoned
 NULL
