@@ -54,16 +54,16 @@ BEGIN_RCPP
     return Rcpp::wrap(__result);
 END_RCPP
 }
-// repluse
-NumericMatrix repluse(const NumericMatrix& nodes, double charge, double thresh, double alpha);
-RcppExport SEXP imvisoned_repluse(SEXP nodesSEXP, SEXP chargeSEXP, SEXP threshSEXP, SEXP alphaSEXP) {
+// repulse
+NumericMatrix repulse(const NumericMatrix& nodes, double charge, double thresh, double alpha);
+RcppExport SEXP imvisoned_repulse(SEXP nodesSEXP, SEXP chargeSEXP, SEXP threshSEXP, SEXP alphaSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope __rngScope;
     NumericMatrix nodes = Rcpp::as<NumericMatrix >(nodesSEXP);
     double charge = Rcpp::as<double >(chargeSEXP);
     double thresh = Rcpp::as<double >(threshSEXP);
     double alpha = Rcpp::as<double >(alphaSEXP);
-    NumericMatrix __result = repluse(nodes, charge, thresh, alpha);
+    NumericMatrix __result = repulse(nodes, charge, thresh, alpha);
     return Rcpp::wrap(__result);
 END_RCPP
 }

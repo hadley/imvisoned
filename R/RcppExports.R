@@ -22,8 +22,8 @@ perturbate <- function(nodes, tol = 1e-6) {
 }
 
 #' @export
-repluse <- function(nodes, charge, thresh, alpha) {
-    .Call('imvisoned_repluse', PACKAGE = 'imvisoned', nodes, charge, thresh, alpha)
+repulse <- function(nodes, charge, thresh, alpha) {
+    .Call('imvisoned_repulse', PACKAGE = 'imvisoned', nodes, charge, thresh, alpha)
 }
 
 #' @export

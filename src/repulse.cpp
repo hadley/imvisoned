@@ -3,7 +3,7 @@ using namespace Rcpp;
 
 //' @export
 // [[Rcpp::export]]
-NumericMatrix repluse(const NumericMatrix& nodes, 
+NumericMatrix repulse(const NumericMatrix& nodes, 
                       double charge, 
                       double thresh, 
                       double alpha) {
