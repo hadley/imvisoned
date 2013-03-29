@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 NumericMatrix repulse2 (const NumericMatrix& nodes, double charge, 
                         const NumericMatrix& weight, double alpha) {

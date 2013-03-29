@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 NumericMatrix perturbate(const NumericMatrix& nodes, 
                          double tol = 1e-6) {

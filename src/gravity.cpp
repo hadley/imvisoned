@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 NumericMatrix gravity(const NumericMatrix& nodes, 
                       double strength, 

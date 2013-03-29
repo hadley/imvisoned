@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 NumericMatrix nonoverlap(const NumericMatrix& nodes, 
                          const NumericMatrix& radii) {

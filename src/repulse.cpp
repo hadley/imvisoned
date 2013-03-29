@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 NumericMatrix repluse(const NumericMatrix& nodes, 
                       double charge, 

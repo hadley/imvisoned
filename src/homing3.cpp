@@ -1,6 +1,7 @@
 #include <Rcpp.h>
 using namespace Rcpp;
 
+//' @export
 // [[Rcpp::export]]
 NumericMatrix homing2 (const NumericMatrix& start, 
 											 const NumericMatrix& current, 
