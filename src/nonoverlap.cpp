@@ -4,7 +4,7 @@ using namespace Rcpp;
 //' @export
 // [[Rcpp::export]]
 NumericMatrix nonoverlap(const NumericMatrix& nodes, 
-                         const NumericMatrix& radii) {
+                         const NumericVector& radii) {
 
   double current_i, current_j, thresh;
   int n = nodes.nrow();

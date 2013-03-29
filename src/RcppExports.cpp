@@ -33,12 +33,12 @@ BEGIN_RCPP
 END_RCPP
 }
 // nonoverlap
-NumericMatrix nonoverlap(const NumericMatrix& nodes, const NumericMatrix& radii);
+NumericMatrix nonoverlap(const NumericMatrix& nodes, const NumericVector& radii);
 RcppExport SEXP imvisoned_nonoverlap(SEXP nodesSEXP, SEXP radiiSEXP) {
 BEGIN_RCPP
     Rcpp::RNGScope __rngScope;
     NumericMatrix nodes = Rcpp::as<NumericMatrix >(nodesSEXP);
-    NumericMatrix radii = Rcpp::as<NumericMatrix >(radiiSEXP);
+    NumericVector radii = Rcpp::as<NumericVector >(radiiSEXP);
     NumericMatrix __result = nonoverlap(nodes, radii);
     return Rcpp::wrap(__result);
 END_RCPP
