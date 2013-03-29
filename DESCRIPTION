@@ -1,0 +1,11 @@
+Package: imvisoned
+Type: Package
+Title: Constrained visualisation layout
+Version: 0.1
+Author: 
+    Joey Huchette <joehuchette@gmail.com>,
+    Hadley Wickham <h.wickham@gmail.com>
+Maintainer: Hadley Wickham <h.wickham@gmail.com>
+Description: Tools for constrained visualisations in R.
+Depends:
+    Rcpp
