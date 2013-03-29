@@ -3,17 +3,19 @@ rescale01 <- function(x) {
   (x - rng[1]) / (rng[2] - rng[1])
 }
 
-
 circle <- function(x, y, radius) {
   theta <- seq(0, 2 * pi, length = 50)
   cbind(x + sin(theta) * radius, y + cos(theta) * radius)
 }
+
+#' @export
 circles <- function(x, y, radius) {
   polys <- mapply(circle, x, y, radius, SIMPLIFY = FALSE)
   polys <- lapply(polys, rbind, c(NA, NA))
   do.call("rbind", polys)
 }
 
+#' @export
 centroid <- function (x1, y1) {
   n <- length(x1)
   wrap <- c(n, 1:(n - 1))
@@ -28,6 +30,7 @@ centroid <- function (x1, y1) {
   }
 }
 
+#' @export
 area <- function (x1, y1) {
   n <- length(x1)
   wrap <- c(n, 1:(n - 1))
